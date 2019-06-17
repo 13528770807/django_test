@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ hello }}</h1>
+
+{% if hello and name %}
+    <h1> hello_and_name </h1>
+{% endif %}
+
+{% if name %}
+    <h1> a=10 </h1>
+{% endif %}
+
+<h2>{{ name | upper }}</h2>
+
+{% for num in num_list reversed %}
+    <h1>{{ num }}</h1>
+{% endfor %}
+
+
+
+</body>
+</html>
